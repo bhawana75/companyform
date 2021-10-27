@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CompanyController;
+use App\Http\Controllers\CheckboxController;
 use App\Http\Controllers\DepartmentController;
 
 /*
@@ -20,3 +21,4 @@ Route::get('/', function () {
 });
 Route::resource('companies', CompanyController::class);
 Route::resource('departments', DepartmentController::class);
+Route::resource('checkboxes', CheckboxController::class);
